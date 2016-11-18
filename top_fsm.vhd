@@ -29,6 +29,6 @@ begin
 CNT : entity work.counter port map (clk,rst_cnt,write_address);
 
 
-RAM : work.dual_port_ram port map (data_valid,clk,write_address,data_out,data_in,read_add);
+RAM : entity work.dual_port_ram port map (data_out_t,data_in,data_valid,add_read,write_address,clk);
 
 end structural;
