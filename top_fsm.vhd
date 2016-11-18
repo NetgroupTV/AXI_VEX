@@ -7,7 +7,7 @@ entity top_fsm is
 
 generic (
         
-     LENGTH : natural := 8;
+     LENGTH : natural := 8; --data bus width
      WIDTH : natural := 8
 );
     
@@ -47,12 +47,6 @@ component counter
         Q : out std_logic_vector(WIDTH-1 downto 0));
     end component;
 
---signal clock: std_logic;
---signal input : std_logic_vector(LENGTH-1 downto 0);
---signal output : std_logic_vector(LENGTH-1 downto 0);
---signal valid : std_logic;
---signal read_address : std_logic_vector(WIDTH-1 downto 0);
---signal reset_count: std_logic;
 signal write_address : std_logic_vector(WIDTH-1 downto 0);
 
 
