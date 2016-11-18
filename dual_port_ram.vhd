@@ -23,7 +23,7 @@ end dual_port_ram;
 
 architecture behavioral of dual_port_ram is
   
-    type registerFile is array(0 to WIDTH-1) of std_logic_vector(LENGTH-1 downto 0);
+    type registerFile is array(0 to 2**(WIDTH-1)) of std_logic_vector(LENGTH-1 downto 0);
     signal registers : registerFile;
 
 begin
