@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
 
 entity counter is
     generic (
@@ -8,7 +9,8 @@ entity counter is
     port (
         clk : in std_logic;
         rst : in std_logic;
-        Q : out std_logic_vector(WIDTH-1 downto 0));
+        Q : out integer :=0);
+
     end counter;
 
 architecture bheav of counter is
@@ -23,6 +25,7 @@ begin
                 cnt <= cnt + '1';
             end if;
         end if;
+        
 end process;
-    Q <= cnt;
+    Q <= (conv_integer(cnt));
 end bheav;
