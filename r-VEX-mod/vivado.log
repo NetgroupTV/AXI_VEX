@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 21 15:08:59 2016
+# Process ID: 9482
+# Current directory: /home/marcospaziani/r-vex-master/r-VEX/src
+# Command line: vivado
+# Log file: /home/marcospaziani/r-vex-master/r-VEX/src/vivado.log
+# Journal file: /home/marcospaziani/r-vex-master/r-VEX/src/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 15:09:25 2016...
