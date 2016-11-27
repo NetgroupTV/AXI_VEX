@@ -11,7 +11,7 @@ entity counter is
     port (
         clk : in std_logic;
         rst : in std_logic;
-        Q : out integer :=0);
+        Q : out std_logic_vector (DMEM_LOGDEP-1 downto 0));
 
     end counter;
 
@@ -29,5 +29,5 @@ begin
         end if;
         
 end process;
-    Q <= (conv_integer(cnt));
+    Q (DMEM_LOGDEP-1 downto 0) <= cnt (DMEM_LOGDEP-1 downto 0);
 end bheav;
